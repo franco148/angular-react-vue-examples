@@ -13,6 +13,7 @@
 <body>
     <div id="app">
         <p>{{ name }}</p>
+        <p v-if="name == 'Franco' ? false : true">Name updated!</p>
         <button v-on:click="changeName">Change name</button>
     </div>
 
