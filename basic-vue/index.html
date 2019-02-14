@@ -15,6 +15,11 @@
         <p>{{ name }}</p>
         <p v-if="name == 'Franco' ? false : true">Name updated!</p>
         <button v-on:click="changeName">Change name</button>
+        <button v-on:click="addElement">New Element</button>
+
+        <ul>
+            <li v-for="el in elements">A Element {{ el }}</li>
+        </ul>
     </div>
 
     <script src="index.js"></script>
