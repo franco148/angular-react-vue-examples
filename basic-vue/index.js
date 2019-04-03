@@ -5,12 +5,12 @@
 Vue.component('app-username', {
     // Here we do not need to set up el:
     // Here data is not an object, but insteand a function
-
-    data: function() {
-        return {
-            username: 'Franco Fral, from my first component'
-        }
-    },
+    props: ['username'],
+    // data: function() {
+    //     return {
+    //         username: 'Franco Fral, from my first component'
+    //     }
+    // },
     template: '<p>{{ username }}</p>'
 });
 

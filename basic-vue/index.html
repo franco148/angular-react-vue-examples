@@ -14,8 +14,8 @@
 
 <body>
     <div id="app">
-        <app-username></app-username>
-        <app-username></app-username>
+        <app-username v-bind:username="'Fernando'"></app-username>
+        <app-username v-bind:username="'Amilcar'"></app-username>
         <p v-bind:class="{updated: name == 'Franco' ? false : true}">{{ name }}</p>
         <p v-if="name == 'Franco' ? false : true">Name updated!</p>
         <button v-on:click="changeName">Change name</button>
