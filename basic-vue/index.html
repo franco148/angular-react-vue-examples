@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic VueJs App</title>
 
+    <link rel="stylesheet" href="styles.css">
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <p>{{ name }}</p>
+        <p v-bind:class="{updated: name == 'Franco' ? false : true}">{{ name }}</p>
         <p v-if="name == 'Franco' ? false : true">Name updated!</p>
         <button v-on:click="changeName">Change name</button>
         <button v-on:click="addElement">New Element</button>
 
         <ul>
-            <li v-for="el in elements" v-bind:id="'element' + el" v-bind:style="{backgroundColor: getColor(el)}">A Element {{ el }}</li>
+            <li 
+                v-for="el in elements"
+                v-bind:id="'element' + el" 
+                v-bind:style="{backgroundColor: getColor(el)}">A Element {{ el }}
+            </li>
         </ul>
     </div>
 
