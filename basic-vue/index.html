@@ -14,6 +14,8 @@
 
 <body>
     <div id="app">
+        <app-username></app-username>
+        <app-username></app-username>
         <p v-bind:class="{updated: name == 'Franco' ? false : true}">{{ name }}</p>
         <p v-if="name == 'Franco' ? false : true">Name updated!</p>
         <button v-on:click="changeName">Change name</button>
@@ -35,8 +37,8 @@
 
     <!-- It will only select and control the first occurrence of this selector
     it finds. The second one is simply ignored-->
-    <div class="username">{{ username }}</div>
-    <div class="username">{{ username }}</div>
+    <!-- <div class="username">{{ username }}</div>
+    <div class="username">{{ username }}</div> -->
 
     <script src="index.js"></script>
 </body>

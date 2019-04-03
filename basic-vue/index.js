@@ -1,3 +1,19 @@
+// Creating a VUE component
+
+// Why app-username and not just username? Because your selectors
+// should be unique so that you don't ovewrite normal html elements.
+Vue.component('app-username', {
+    // Here we do not need to set up el:
+    // Here data is not an object, but insteand a function
+
+    data: function() {
+        return {
+            username: 'Franco Fral, from my first component'
+        }
+    },
+    template: '<p>{{ username }}</p>'
+});
+
 new Vue({
     el: '#app',
     data: {
@@ -34,9 +50,10 @@ new Vue({
 // it finds. The second one is simply ignored. A view instance can only
 // control one part of your code, not multiple ones but there is a solution
 // which actually allows us to achieve what we want. It is using COMPONENTS.
-new Vue({
-    el: '.username',
-    data: {
-        username: 'Franco'
-    }
-});
+
+// new Vue({
+//     el: '.username',
+//     data: {
+//         username: 'Franco'
+//     }
+// });
