@@ -11,7 +11,13 @@ Vue.component('app-username', {
     //         username: 'Franco Fral, from my first component'
     //     }
     // },
-    template: '<p>{{ username }}</p>'
+    template: '<p v-on:click="usernameClicked">{{ username }}</p>',
+    methods: {
+        usernameClicked() {
+            console.log('Clicked....', this.username);
+            this.$emit('usrclicked', this.username);
+        }
+    }
 });
 
 new Vue({
@@ -29,6 +35,9 @@ new Vue({
         },
         getColor: function(number) {
             return number % 2 == 0 ? 'green' : 'red';
+        },
+        userWasClicked(name) {
+            alert(name);
         }
     }
 });
