@@ -15,4 +15,15 @@ npm run dev
 npm run build
 ```
 
+## Create and Run a Vue Project
+
+``` bash
+# Creating a new Vue Project with the CLI
+vue init webpack-simple <project-name>
+
+# Running a Vue Project
+npm run dev
+
+```
+
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
