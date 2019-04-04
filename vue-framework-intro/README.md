@@ -26,4 +26,9 @@ npm run dev
 
 ```
 
+## Important Notes
+> In a .vue files, we at least need to have a <template> code, we can skip the others like <script> or <style>
+
+> A component can be used as a global component or only used in a specific one.
+
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

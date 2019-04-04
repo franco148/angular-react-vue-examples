@@ -2,10 +2,12 @@
     <div class="user">
         <h3>The User</h3>
         <p>My username is {{ username }}</p>
+        <app-info></app-info>
     </div>
 </template>
 
 <script>
+    import Info from "./Info.vue";
     // The exported object is just a Vue component, so you may
     // use all the instance properties like data, props, methods, etc.
     export default {
@@ -13,6 +15,9 @@
             return {
                 username: 'Franco!!!'
             }
+        },
+        components: {
+            'app-info': Info
         }
     }
 </script>
