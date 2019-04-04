@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic VueJs App</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <app-username 
+            v-bind:username="'Fernando'"
+            v-on:usrclicked="userWasClicked($event)"
+        ></app-username>
+        <app-username v-bind:username="'Amilcar'"></app-username>
+        <p v-bind:class="{updated: name == 'Franco' ? false : true}">{{ name }}</p>
+        <p v-if="name == 'Franco' ? false : true">Name updated!</p>
+        <button v-on:click="changeName">Change name</button>
+        <button v-on:click="addElement">New Element</button>
+
+        <ul>
+            <li 
+                v-for="el in elements"
+                v-bind:id="'element' + el" 
+                v-bind:style="{backgroundColor: getColor(el)}">A Element {{ el }}
+            </li>
+        </ul>
+    </div>
+
+    <div id="app2">
+        <p>Second Vue Instance</p>
+        <!-- v-model is for two way binding -->
+        <input type="text" v-model="message">
+        <p>{{ message }}</p>
+    </div>
+
+    <!-- It will only select and control the first occurrence of this selector
+    it finds. The second one is simply ignored-->
+    <!-- <div class="username">{{ username }}</div>
+    <div class="username">{{ username }}</div> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- NOTE N#1 -->
+<!-- So far (and also for the rest of this course), we used v-bind  to bind to HTML attributes and properties and v-on  to bind to events.
+
+There are shorthands you can use for these common directives though.
+
+v-bind:PROPERTY  => 
+
+:PROPERTY 
+
+Example: v-bind:style="..."  => :style="..." 
+
+v-on:EVENT  => @EVENT 
+
+Example: v-on:click="..."  => @click="..."  -->
