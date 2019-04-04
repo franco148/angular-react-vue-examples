@@ -24,6 +24,9 @@ vue init webpack-simple <project-name>
 # Running a Vue Project
 npm run dev
 
+# React router
+npm install --save vue-router
+
 ```
 
 ## Important Notes
