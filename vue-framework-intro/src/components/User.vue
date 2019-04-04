@@ -22,7 +22,12 @@
     }
 </script>
 
-<style>
+<style scoped>
+    /* The following styles may be applied to all html components, however we
+    can scoped it adding scoped to the style tag. 
+    With that change, the styles scope will be reduced to the component
+    and its related child ones.
+    */
     p {
         font-style: italic;
     }
