@@ -36,3 +36,14 @@ npm install --save vue-router
 > A component can be used as a global component or only used in a specific one.
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## Understanding workflows & webpack
+
+#### How webpack works: Entry and Output
+
+> The main configuration in webpack.config.js are regarding to: entry and output.
+
+#### Modules, rules and plugins
+
+> All requried plugins and where they are going to be located.
