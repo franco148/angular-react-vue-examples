@@ -73,4 +73,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ``` bash
 npm install --save react-router-dom
+
+npm install react-router-dom # Used for fixing an error that I had.
 ```
