@@ -47,3 +47,10 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 #### Modules, rules and plugins
 
 > All requried plugins and where they are going to be located.
+
+
+# REACT JS
+
+## NOTES
+
+> React Js can not be configured locally, it will need babel for the implementation of a project following this library.
