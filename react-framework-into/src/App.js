@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
-import Info from './components/Info';
+// import Info from './components/Info';
 import User from './components/User'
 import Account from './components/Account'
 import Blog from './components/Blog'
