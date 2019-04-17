@@ -38,6 +38,17 @@ npm install --save vue-router
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
+## Introduction:
+- We have 3 options for installing VueJs
+  - The CDN
+  - via NPM - npm install vue --save
+  - via vue cli
+
+- We are going to follow the third option.
+  - npm install --global vue-cli
+  - vue : verify the installation
+  - vue init webpack <project-name>
+
 ## Understanding workflows & webpack
 
 #### How webpack works: Entry and Output
