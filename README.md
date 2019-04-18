@@ -3,7 +3,7 @@ Reviewing differences (main characteristics) between Angular5 vs ReactJS vs VueJ
 
   
 ### 1: THE LEARNING CURVE
-#### INITIAL STAGE
+##### INITIAL STAGE
 ###### Angular
 - Needed to understand about Angular CLI, which add some complex because we have to understand its workflow, why we need the CLI, why we need to create a project like this that we have all the different modules, and components and different files and that. There for we need a workflow which transports typescript and which merges all the files (fats) into a basic bundle.
 - Needed to have knowledge regarding to TypeScript
@@ -18,7 +18,7 @@ Reviewing differences (main characteristics) between Angular5 vs ReactJS vs VueJ
 - We start simply controlling a part of the DOM and then using the VueJS syntax which is straightforward to understand at the beginning.
 
 
-#### DIVING DEEPER STAGE
+##### DIVING DEEPER STAGE
 ###### Angular
 - We have to understand how components, modules and the syntax works and how all these pieces work together. This seems to have a doable step, but still it is something we have to get into. We have to understand the way angular works.
 - It might not be as hard as understanding how the project works, how the angular APIs started and why we use TypeScript. But still it is not super easy.
@@ -30,7 +30,7 @@ Reviewing differences (main characteristics) between Angular5 vs ReactJS vs VueJ
 - We might start using our local workflow with webpack, so we can use ES6 and have it compile to ES5, and we might start using these the ```.vue``` files to have an easier way of writing components in the end. But again we have to understand that at first we have to understand that ```.vue``` files give us more features because they are compiled to javascript code in our workflow and not compiled in the browser as we did with the very first step.
 
 
-#### BUILDING APPs STAGE
+##### BUILDING APPs STAGE
 ###### Angular
 - We will need to understand about State Management
 ###### ReactJs
@@ -43,7 +43,7 @@ Reviewing differences (main characteristics) between Angular5 vs ReactJS vs VueJ
 - There is a package called  VueX which is by the creators of VueJs and which integrates nicely into it. And therefore whilst being something we have to learn is not that difficult to learn in the end.
 
 
-#### DEPLOYMENT STAGE
+##### DEPLOYMENT STAGE
 ###### Angular
 - It really taking off there are tons of optimizations we can do, and we unfortunately have to do to get an application which really is small and offers the best performance.
 - It is not worse from a performance perspective necessarily but getting it to perform nicely and optimizing it for production might be more difficult.
