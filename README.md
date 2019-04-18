@@ -100,6 +100,27 @@ In bigger apps this point is the huge problem.
 - VueJs: YES (VueX and official package which integrates nicely into VueJs and which makes managing the state easier. So that is really great and that is something we can use and which really allows us to manage the state.)
 - ReactJs: YES//NO (We do not have an official package, we have REDUX which is pretty common to use and we also have flux and that is the first thing you have to decide which approach should I use. Itegrate them is also hard the first time)
 
+### 4: PERFORMANCE
+###### Angular:
+- We uses che CLI and execute ```ng build --prod --aot``` for optimizing all the project for production.
+- dist folder contains all the bundled files.
+- Some files are a little big, they would be smaller actually (430KB of vendor is not much small).
+
+###### VueJs:
+- Uses ```npm run build```, it optimize and minimizes everything.
+- The final result is just 105KB, it contains everything even the vendor libraries (Actually i would became much more smaller).
+
+###### ReactJs:
+- Uses ```npm run build```, it optimizes evething.
+- The result is one main.js, it contains everything 203KB.
+
+###### JS Frameworks Benchmark.
+Performance order:
+1. Vue
+2. React
+3. Angular: However this is designed for very big applications, in which Vue and React may not have a good performance.
+
+
 ### GENERAL RESULT
 
 | APPROACH | ANGULAR | VUE | REACT |
@@ -107,7 +128,7 @@ In bigger apps this point is the huge problem.
 |Learning Curve| - | + | - |
 |Downscaling/MPAs| - | + | +/- |
 |Upscaling/SPAs| + | +/- | +/- |
-|Performance||||
+|Performance| -/+ (better for bigger apps)| + | +/- |
 |Dev to Production||||
 |Popularity/Jobs||||
 
