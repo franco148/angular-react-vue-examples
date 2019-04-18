@@ -57,6 +57,50 @@ Reviewing differences (main characteristics) between Angular5 vs ReactJS vs VueJ
 - But out of the box, these frameworks work better we can say.
 
 
+### 2: DOWNSCALING & FULLSTACK APPLICATIONS
+##### CAN YOU JUST DROP IN A JS IMPORT AND GET STARTED?
+- Angular = NO (It is not really for small apps)
+- VueJs = YES
+- ReactJs = YES (It is possible, no workflow is absolutely needed.)
+
+##### IS THE FRAMEWORK SUITED FOR MULTI-PAGE-APPLICATIONS (MPAs)?
+- Angular = NO (It is not suited for that. It is just way too much code way too complicated for that.)
+- VueJs = YES (We can just control de DOM)
+- ReactJs = YES/NO (But on the other hand it might not be super easy to get started here. We still need a workflow to setup first for working with many pages)
+
+##### IS A MORE COMPLEX BUILD WORKFLOW REQUIRED/RECOMMENDED (FOR "SIMPLE" APPS)?
+- Angular = YES (We need to optimize, we need configurations and bundles)
+- VueJs = NO (It is not required, it might be benefitial, it might give some advantages but it is not absolutely required)
+- ReactJs = YES (Kind of it is, it is possible to use it without that, but really react works best when using ES6 for which you will probably need a workflow because that it is not supported by all browsers, and you also might need to do some other things bundling things efficiently, so for that instance kind of need a workflow) 
+
+##### DOES THE FRAMEWORK COME WITH A LOT OF OVERHEAD?
+- Angular = YES (we know that it can be optimized, we can stip out code that we are not using, but still the whole idea behind laying low with modules and everything is just a bit overkill for simply controlling a tiny piece in a existing application or on a page of a multi page application)
+- VueJs = NO (It may also include things you do not need on that single page, but in the end it is clean and you can only bring what you need. And there is not difficult concept behind it which is overkill)
+- ReactJs = NO (It is also good for data, does not a ship with a lot of overhead it is pretty lean, it is made for dead except purpose of controlling and manipulating your view, so the HTML code and therefore that is really great for that.)
+
+
+
+### GENERAL RESULT
+
+| APPROACH | ANGULAR | VUE | REACT |
+| :--- | :---: | :---: | :---: |
+|Learning Curve||||
+|Downscaling/MPAs||||
+|Upscaling/SPAs||||
+|Performance||||
+|Dev to Production||||
+|Popularity/Jobs||||
+
+
+
+
+
+
+
+
+
+
+
 
 
 
