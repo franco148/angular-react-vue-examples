@@ -120,7 +120,7 @@ Performance order:
 2. React
 3. Angular: However this is designed for very big applications, in which Vue and React may not have a good performance.
 
-### EASY OF DEPLOYMENT
+### 5: EASY OF DEPLOYMENT
 ###### Angular: Steps that is needed to be performed.
 1. Dev Code: At this level we do not have optimizations. Which means templates are NOT compiled. So angular may need to understand all the time how the HTML is written. That may be a problem, because that increases our codebase and decreases the runtime performance because of that compilation step which is needed at runtime. Not super great but we can do something about it.
 2. In angular we can run ahead of time compilation as part of our workflow that is basically the same as happens here in the runtime only approach in VueJs. Everything is compiled to javascript in the workflow already. So that in the end what we ship again is just javascript without angular compiler without the need of compilling, parsing our templates at runtime.
@@ -135,6 +135,30 @@ Performance order:
 
 ###### SUMARY:
 After saw all, it looks like Angular is a loser because here right now it looks like we always have to compile the templates in the browser. In VueJs we have a choice and in React we do not have the problem to begin with.
+
+
+### 6: POPULARITY & JOB MARKET
+This analysis is basically based on GitHub repositories.
+###### Angular
+- **Starts:** 23276
+- **Contributors:** 428
+- **How often are used for real world projects?:** NBA, some onlie games, portals, google is migrating pretty much all it services like AddWords, etc.
+- **How is supporting:** Google
+- **Jobs:** 674 Job listings for "Angular2" or "Angular4" on indeed.com, For angularjs > 12000
+
+###### VueJs
+- **Starts:** 50787
+- **Contributors:** 93
+- **How often are used for real world projects?:** Blogspot for the creator, Alibaba, Baidu, Tencent, Xiaomi, Line, Nintendo, etc 
+- **How is supporting:** Even You
+- **Jobs:** 183 for vue.js or vuejs
+
+###### ReactJs
+- **Starts:** 64790
+- **Contributors:** 984
+- **How often are used for real world projects?:** Facebook (partially), Instagram, Khan Academy (partially), Codeacademy (partially), New Yor Times (Partially), Yahoo Mail, Dropbox
+- **How is supporting:** Facebook
+- **Jobs:** 3020 for react.js or reactjs
 
 
 ### GENERAL RESULT
