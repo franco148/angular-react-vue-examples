@@ -120,6 +120,22 @@ Performance order:
 2. React
 3. Angular: However this is designed for very big applications, in which Vue and React may not have a good performance.
 
+### EASY OF DEPLOYMENT
+###### Angular: Steps that is needed to be performed.
+1. Dev Code: At this level we do not have optimizations. Which means templates are NOT compiled. So angular may need to understand all the time how the HTML is written. That may be a problem, because that increases our codebase and decreases the runtime performance because of that compilation step which is needed at runtime. Not super great but we can do something about it.
+2. In angular we can run ahead of time compilation as part of our workflow that is basically the same as happens here in the runtime only approach in VueJs. Everything is compiled to javascript in the workflow already. So that in the end what we ship again is just javascript without angular compiler without the need of compilling, parsing our templates at runtime.
+3. Other optimization we can put into place in all approaches too. We can lazy load some components which mean only load them if we really visit them, if we really need them, we can mix them with pre-loading so that we do not load them eargerly at the point of time we download the app for the first time but that we also do not just load them once we really need them but that we preload them before we might need them.
+4. We also could use tree shaking which means strip out unnecessary stuff in our code or we can try to manually improve our tools  and tweak some adjustments to write leaner shorter and more concise code. All this can be done in all frameworks, but it is most important in Angular though because you two way that angular works, there is a lot of optimization needed to get to a small bundle at the end and to get to fast code.
+5. You coud look at this as a disadvantage but since we do have CLI which gives us a great workflow which does all these things it is on the average and really simple while still giving you if you are an expert and want to do everything on you own a chance of doing it on your own. That is a bit different in the other approaches where due to the way they work you just have less things you can optimize. So over all easier to get from development to production in Vue and React, but also easy with the Angular CLI where still giving you more options to do that on your own.
+###### VueJs
+1. Runtime only > Dev Code: which means that VueJs does not ship a compiler to understand our templates. That means that we can not use a Vue instance to control a part of our real HTML code but that instead we use our view files which are compiled to javascript only so that we have the best of both worlds. We can still write normal HTML code in these files but then they are compiled as part of our workflow so that what we shipped to the browser in the end is optimized code which is only javascript and does not include any compiler or any HTML code therefore. Alternatively we can also choose an approach where we have to compile or include it.
+2. With Compiler > Dev Code: Which allows us to create a new Vue instance and control parts of our real DOM of our real HTML code. We do not have to use .vue files then but we also give up on some optimization potential and therefore we have a bigger bundle size and a slower runtime performance. Now in this case where we have uncompiled templates there is nothing we can do here. We have to set up a workflow where we ever followed the approach of do not having the Vue compiler and compiling everything as part of the workflow with webpack and the vue loader or of having jabber approach including the compiler and shipping the bigger codebase and that might be up to you on what you need if you need to work in the real HTML code and if you need to compile at runtime or if you are saying well I can optimize all the code during development and then ship that optimized version only.
+###### ReactJs
+1. Dev Code: Remember everything is javascript so we do not have any HTML code we would have to parse or things like that. Everything is javascript already, so no optimization needed regarding this.
+
+###### SUMARY:
+After saw all, it looks like Angular is a loser because here right now it looks like we always have to compile the templates in the browser. In VueJs we have a choice and in React we do not have the problem to begin with.
+
 
 ### GENERAL RESULT
 
@@ -129,7 +145,7 @@ Performance order:
 |Downscaling/MPAs| - | + | +/- |
 |Upscaling/SPAs| + | +/- | +/- |
 |Performance| -/+ (better for bigger apps)| + | +/- |
-|Dev to Production||||
+|Dev to Production| +/- | + | + |
 |Popularity/Jobs||||
 
 
