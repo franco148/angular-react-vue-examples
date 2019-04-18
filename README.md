@@ -170,10 +170,10 @@ This analysis is basically based on GitHub repositories.
 |Upscaling/SPAs| + | +/- | +/- |
 |Performance| -/+ (better for bigger apps)| + | +/- |
 |Dev to Production| +/- | + | + |
-|Popularity/Jobs||||
+|Popularity/Jobs| + | = | + |
 
-
-
+### THE VERDICT
+- According the analysis based on all points we took into account, VueJs is the winner following by React. But all may depend on many other opinions.
 
 
 
